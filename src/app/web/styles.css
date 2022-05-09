@@ -1,0 +1,8 @@
+.video_container{
+    display: grid;
+}
+
+.input_video, .output_canvas{
+    grid-column: 1;
+    grid-row: 1;
+}

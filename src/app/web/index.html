@@ -1,0 +1,46 @@
+<!-- Home HTML FOR INDEX AND SUCH, BASE OF APPLICATION-->
+<!DOCTYPE html>
+<html lang=”en”>
+	<head>
+		<!--- HTML base set, set for base app-->
+    	<meta charset="UTF-8">
+		<!-- NEEDED FOR COMMUNICATION WITH PYTHON FILE, NEEDED FOR APP DON'T DELETE-->
+		<script type="text/javascript" src="/eel.js"></script>
+
+		<title>ASL-Translator-App</title>
+
+	</head>
+	<body>
+		<img id="video-output" src="video.png" >
+
+		<!-- Live Config - live changes for changing output -->
+		<div class="liveConfig" id="liveConfig" name="liveConfig">
+			<h1> Live Configuration</h1>
+			<input type="checkbox" id="lv1" name="lv1" value="disableHand">
+			<label for="lv1"> Disable Hand Tracking </label><br><br>
+		</div>
+
+		<!-- Text History - shows all text output -->
+		<div class="txtHistory">
+			<h1> Text History</h1>
+			<textarea id="thBox" name="thBox" rows="30" cols="30"></textarea>
+		</div>
+
+		<!-- Last Sign Text Box - shows last sign "signed" -->
+		<div class="lastSign">
+			<label for="lsBox">Last Sign:</label>
+			<input type="text" id="lsBox" name="lsBox">
+		</div>
+
+		<!-- buttons - they're buttons -->
+		<div class="appButtons">
+			<button type="button" id="openLibBtn">Open ASL System Library</button>
+			<button type="button" id="copythBtn">Copy</button>
+			<button type="button" id="txtSaveBtn">Save as .txt</button>
+		</div>
+		
+		<!-- Reference to JavaScript files in folder - feel free to change -->
+		<script src="inti.js"></script>
+		<script src="liveConfig.js"></script>
+	</body>
+</html>
